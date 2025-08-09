@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Give an Item — Give & Take</title><link rel="stylesheet" href="css/style.css"><script defer src="js/app.js"></script></head>
+    <body data-page="post"><header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Give &amp; Take</a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a  href="index.html">Home</a></li><li><a  href="listings.html">Browse</a></li><li><a class="active" href="post.html">Give</a></li><li><a  href="request.html">Request</a></li><li><a  href="about.html">About</a></li><li><a  href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container" style="padding:24px 0"><h1>Give an Item</h1>
+    <p class="help">Fields marked with * are required.</p><form id="postForm" class="form-card" novalidate>
+    <div class="form-row"><label for="title">* Title</label><input class="input" id="title" name="title" required minlength="3" maxlength="80" placeholder="e.g., Baby stroller (good condition)"></div>
+    <div class="form-row"><label for="category">* Category</label><select id="category" name="category" required><option value=''>Choose…</option><option value='household'>Household</option><option value='electronics'>Electronics</option><option value='services'>Services</option><option value='books'>Books</option><option value='others'>Others</option></select></div>
+    <div class="form-row"><label for="desc">* Description</label><textarea class="input" id="desc" name="desc" required rows="4" placeholder="Short details, condition, pick-up notes"></textarea></div>
+    <div class="form-row"><label for="location">Location</label><input class="input" id="location" name="location" placeholder="e.g., Cyberjaya"></div>
+    <div class="form-row"><label for="contact">* Contact</label><input class="input" id="contact" name="contact" required placeholder="email or phone (for demo)"></div>
+    <div class="form-row"><label for="image">Photo (optional)</label><input class="input" id="image" name="image" type="file" accept="image/*"></div>
+    <p class="help">Images are stored locally and compressed (max side ~900px).</p>
+    <div class="form-actions"><button class="btn primary" type="submit">Save</button><a class="btn" href="listings.html">Cancel</a></div></form></main><footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Zuhelmiza Binti Zullkefli. Prototype for BIT2044 Web Technologies.</p>
+  </div>
+</footer>
+</body></html>
